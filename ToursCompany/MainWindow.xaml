@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToursCompany"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Туры" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="\Resources\back1.jpg" Opacity="0.6"/>
+        </Grid.Background>
+        <Rectangle Fill="Black" Opacity="0.3"/>
+        <Frame x:Name="MyFrame" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

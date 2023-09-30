@@ -12,19 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ToursCompany.Pages;
+using ToursCompany.Components;
 
-namespace ToursCompany
+namespace ToursCompany.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ToursPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ToursPage : Page
     {
-        public MainWindow()
+        public ToursPage()
         {
             InitializeComponent();
-            MyFrame.Navigate(new AuthPage());
+            ToursList.ItemsSource = App.db.Tour.ToList();
         }
     }
 }

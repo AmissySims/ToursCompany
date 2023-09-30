@@ -12,19 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ToursCompany.Pages;
 
-namespace ToursCompany
+namespace ToursCompany.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainMainPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainMainPage : Page
     {
-        public MainWindow()
+        public MainMainPage()
         {
             InitializeComponent();
-            MyFrame.Navigate(new AuthPage());
         }
     }
 }

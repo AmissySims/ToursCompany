@@ -1,0 +1,22 @@
+﻿<Page x:Class="ToursCompany.Pages.MainMainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ToursCompany.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainMainPage">
+
+    <Grid >
+        <Image Source="\Resources\main.png" Opacity="0.3"/>
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock TextWrapping="Wrap"  
+            Text=" Во время туров сможете своими глазами увидеть известные 
+            достопримечательности, посмотреть выдающиеся достижения 
+            цивилизаций."  FontSize="22" />
+        </StackPanel>
+       
+    </Grid>
+</Page>
