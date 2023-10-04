@@ -23,6 +23,7 @@
             <Button x:Name="HotelsBt" Content=" Отели " Margin="5" Click="HotelsBt_Click"/>
             <Button x:Name="MainBt" Content=" Главная " Margin="5" Click="MainBt_Click"/>
         </StackPanel>
+        <Image Source="\Resources\logo.png" Grid.Row="0" RenderOptions.BitmapScalingMode="Fant" HorizontalAlignment="Right"/>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1"/>
     </Grid>
 </Page>

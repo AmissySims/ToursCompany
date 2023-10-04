@@ -13,6 +13,10 @@
             <RowDefinition Height="23*"/>
             <RowDefinition Height="202*"/>
         </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock Text="Сортировка" Margin="5"/>
+            <ComboBox Margin="5" x:Name="SortCb" Width="100" SelectedIndex="0"></ComboBox>
+        </StackPanel>
         <ListView Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}"
                    x:Name="ToursList"
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
@@ -38,7 +42,7 @@
                                    HorizontalAlignment="Center" VerticalAlignment="Center"
                                    RenderOptions.BitmapScalingMode="Fant">
                                 <Image.Source>
-                                    <Binding Path="MainImage">
+                                    <Binding Path="Photo">
                                         <Binding.TargetNullValue>
                                             <BitmapImage UriSource="\Resources\logo.png"/>
                                         </Binding.TargetNullValue>

@@ -9,13 +9,13 @@
       Title="MainMainPage">
 
     <Grid >
-        <Image Source="\Resources\main.png" Opacity="0.3"/>
+      
         
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="White" >
             <TextBlock TextWrapping="Wrap"  
             Text=" Во время туров сможете своими глазами увидеть известные 
             достопримечательности, посмотреть выдающиеся достижения 
-            цивилизаций."  FontSize="22" />
+            цивилизаций."  FontSize="22" Margin="10"/>
         </StackPanel>
        
     </Grid>

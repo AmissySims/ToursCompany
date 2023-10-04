@@ -28,7 +28,6 @@ namespace ToursCompany.Components
         public virtual DbSet<City> City { get; set; }
         public virtual DbSet<Country> Country { get; set; }
         public virtual DbSet<Hotel> Hotel { get; set; }
-        public virtual DbSet<PhotoTour> PhotoTour { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<Stars> Stars { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }

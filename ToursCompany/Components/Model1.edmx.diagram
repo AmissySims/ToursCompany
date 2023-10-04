@@ -5,27 +5,25 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="a3c77e9a05014a99af8a8a9806878636" Name="Diagram1">
-        <EntityTypeShape EntityType="TourismDBModel.City" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.Country" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.Hotel" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.PhotoTour" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.Role" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.Stars" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.Ticket" Width="1.5" PointX="7.5" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.Tour" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.TypeOfPassage" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourismDBModel.User" Width="1.5" PointX="5.25" PointY="11.125" IsExpanded="true" />
-        <AssociationConnector Association="TourismDBModel.FK_City_Country" ManuallyRouted="false" />
-        <AssociationConnector Association="TourismDBModel.FK_Hotel_City" ManuallyRouted="false" />
-        <AssociationConnector Association="TourismDBModel.FK_Tour_City" ManuallyRouted="false" />
-        <AssociationConnector Association="TourismDBModel.FK_Hotel_Stars" ManuallyRouted="false" />
-        <AssociationConnector Association="TourismDBModel.FK_Ticket_Hotel" ManuallyRouted="false" />
-        <AssociationConnector Association="TourismDBModel.FK_PhotoTour_Tour" ManuallyRouted="false" />
-        <AssociationConnector Association="TourismDBModel.FK_User_Role" ManuallyRouted="false" />
-        <AssociationConnector Association="TourismDBModel.FK_Ticket_Tour" ManuallyRouted="false" />
-        <AssociationConnector Association="TourismDBModel.FK_Ticket_TypeOfPassage" ManuallyRouted="false" />
-        <AssociationConnector Association="TourismDBModel.FK_Ticket_User" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TourismDBModel.City" Width="1.5" PointX="3" PointY="3.5" />
+        <EntityTypeShape EntityType="TourismDBModel.Country" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="TourismDBModel.Hotel" Width="1.5" PointX="5.25" PointY="3.25" />
+        <EntityTypeShape EntityType="TourismDBModel.Role" Width="1.5" PointX="3" PointY="10.625" />
+        <EntityTypeShape EntityType="TourismDBModel.Stars" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="TourismDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="6.875" />
+        <EntityTypeShape EntityType="TourismDBModel.Ticket" Width="1.5" PointX="7.5" PointY="4.625" />
+        <EntityTypeShape EntityType="TourismDBModel.Tour" Width="1.5" PointX="5.25" PointY="6.625" />
+        <EntityTypeShape EntityType="TourismDBModel.TypeOfPassage" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="TourismDBModel.User" Width="1.5" PointX="5.25" PointY="10.125" />
+        <AssociationConnector Association="TourismDBModel.FK_City_Country" />
+        <AssociationConnector Association="TourismDBModel.FK_Hotel_City" />
+        <AssociationConnector Association="TourismDBModel.FK_Tour_City" />
+        <AssociationConnector Association="TourismDBModel.FK_Hotel_Stars" />
+        <AssociationConnector Association="TourismDBModel.FK_Ticket_Hotel" />
+        <AssociationConnector Association="TourismDBModel.FK_User_Role" />
+        <AssociationConnector Association="TourismDBModel.FK_Ticket_Tour" />
+        <AssociationConnector Association="TourismDBModel.FK_Ticket_TypeOfPassage" />
+        <AssociationConnector Association="TourismDBModel.FK_Ticket_User" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

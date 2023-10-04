@@ -97,9 +97,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Components\Partials\AuthUser.cs" />
-    <Compile Include="Components\PhotoTour.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Components\Role.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

@@ -17,7 +17,6 @@ namespace ToursCompany.Components
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Tour()
         {
-            this.PhotoTour = new HashSet<PhotoTour>();
             this.Ticket = new HashSet<Ticket>();
         }
     
@@ -26,10 +25,9 @@ namespace ToursCompany.Components
         public string Description { get; set; }
         public Nullable<int> CityId { get; set; }
         public Nullable<decimal> Price { get; set; }
+        public byte[] Photo { get; set; }
     
         public virtual City City { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhotoTour> PhotoTour { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Ticket> Ticket { get; set; }
     }
