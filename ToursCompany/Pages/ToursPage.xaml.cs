@@ -24,7 +24,45 @@ namespace ToursCompany.Pages
         public ToursPage()
         {
             InitializeComponent();
-            ToursList.ItemsSource = App.db.Tour.ToList();
+            SortCb.Items.Add("все");
+            SortCb.Items.Add("По цене мин.");
+            SortCb.Items.Add("По цене макс.");
+        }
+        private void Refresh()
+        {
+            var tour = App.db.Tour.ToList();
+          
+            if (SortCb.SelectedIndex == 1)
+            {
+                tour = tour.OrderBy(x => x.Price).ToList();
+            }
+            if (SortCb.SelectedIndex == 2)
+            {
+                tour = tour.OrderByDescending(x => x.Price).ToList();
+            }
+            ToursList.ItemsSource = tour;
+        }
+
+       
+
+        private void SortCb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Refresh();
+        }
+
+        private void EditBt_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeleteBt_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LookBt_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
