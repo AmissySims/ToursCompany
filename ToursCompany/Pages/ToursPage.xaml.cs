@@ -57,6 +57,10 @@ namespace ToursCompany.Pages
 
         private void DeleteBt_Click(object sender, RoutedEventArgs e)
         {
+            var selTour = (sender as Button).DataContext as Tour;
+            App.db.Tour.Remove(selTour);
+            App.db.SaveChanges();
+            Refresh();
 
         }
 
